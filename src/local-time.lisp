@@ -65,8 +65,8 @@
 (declaim (inline now format-timestring %get-current-time
                  format-rfc3339-timestring to-rfc3339-timestring
                  format-rfc1123-timestring to-rfc1123-timestring)
-         (ftype (function (&rest t) string) format-rfc3339-timestring)
-         (ftype (function (&rest t) string) format-timestring)
+         (ftype (function (&rest t) simple-base-string) format-rfc3339-timestring)
+         (ftype (function (&rest t) simple-base-string) format-timestring)
          (ftype (function (&rest t) fixnum) local-timezone)
          (ftype (function (&rest t) (values
                                      timezone-offset
